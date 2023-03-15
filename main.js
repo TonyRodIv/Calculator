@@ -20,12 +20,29 @@ operationBtn.forEach((i) => {
 
 
 equalsBtn.addEventListener('click', () => {
-    display.value = eval(display.value);
-    console.log(display.value)
+    let result = eval(display.value);
+    if (isNaN(result)) {
+        display.value = 'Error';
+        setTimeout(clear,1500)
+    } else {
+        display.value = result;
+    }
 });
-
+function clear() {
+    display.value = '';
+}
 clearBtn.addEventListener('click', () => {
     display.value = '';
+})
+
+let checkbox = document.getElementById('checkTHEME')
+
+checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+        console.log(mudarTema())
+    } else{
+        console.log(mudarTemaGreen())
+    }
 })
 
 function mudarTema() {
@@ -56,13 +73,3 @@ function mudarTemaGreen() {
     document.body.style.setProperty('--acHOV', '#c7dce0');
     document.body.style.setProperty('--equalHOV', '#bae0ae');
 }
-
-let checkbox = document.getElementById('checkTHEME')
-
-checkbox.addEventListener("change", () => {
-    if (checkbox.checked) {
-        console.log(mudarTema())
-    } else{
-        console.log(mudarTemaGreen())
-    }
-})
