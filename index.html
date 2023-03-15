@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleGREEN.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="calculatorBG">
+            <input type="text" id="display" class="display" disabled>
+            <div class="buttons">
+                <table>
+                    <tr>
+                      <td><button data-clear class="btn-AC">AC</button></td>
+                      <td><button class="btn-operation">+/-</button></td>
+                      <td><button data-operation class="btn-operation">%</button></td>
+                      <td><button data-operation class="btn-operation">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button data-number>7</button></td>
+                        <td><button data-number>8</button></td>
+                        <td><button data-number>9</button></td>
+                        <td><button data-operation class="btn-operation">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button data-number>4</button></td>
+                        <td><button data-number>5</button></td>
+                        <td><button data-number>6</button></td>
+                        <td><button data-operation class="btn-operation">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button data-number>1</button></td>
+                        <td><button data-number>2</button></td>
+                        <td><button data-number>3</button></td>
+                        <td><button data-operation class="btn-operation">+</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button data-number style="width: 10.5rem; border-radius: 50px;">0</button></td>
+                        <td><button>.</button></td>
+                        <td><button data-equals class="btn-equality">=</button></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
