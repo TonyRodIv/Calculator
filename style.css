@@ -94,6 +94,7 @@ button:hover{
     width: 3.5em;
     height: 2em;
     margin-bottom: 1rem;
+    -webkit-tap-highlight-color: transparent;
   }
   
   /* Hide default HTML checkbox */
