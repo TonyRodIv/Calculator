@@ -6,17 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1580/1580261.png" type="image/x-icon">
-    <link rel="stylesheet" href="styleGREEN.css">
+    <link rel="stylesheet" href="style.css">
     <!-- 
         Tive inspirações no MATERIAL YOU do android 12 para fazer a calculadora, fiz com duas paletas diferentes, 
-            styleGREEN.css -> PALETA VERDE
-            styleROSE.css -> PALETA ROSA  
     -->
     <title>Calculadora</title>
 </head>
 
 <body>
     <main>
+        <label class="switch">
+            <input type="checkbox" id="checkTHEME">
+            <div class="slider"></div>
+            <div class="slider-card">
+              <div class="slider-card-face slider-card-front"></div>
+              <div class="slider-card-face slider-card-back"></div>
+            </div>
+          </label>
         <div class="calculatorBG">
             <input type="text" id="display" class="display" disabled>
             <div class="buttons">
@@ -43,11 +49,11 @@
                         <td><button data-number>1</button></td>
                         <td><button data-number>2</button></td>
                         <td><button data-number>3</button></td>
-                        <td><button data-operation class="btn-operation">+</button></td>
+                        <td><button data-number class="btn-operation">+</button></td>
                     </tr>
                     <tr>
                         <td colspan="2"><button data-number style="width: 10.5rem; border-radius: 50px;">0</button></td>
-                        <td><button>.</button></td>
+                        <td><button data-number>.</button></td>
                         <td><button data-equals class="btn-equality">=</button></td>
                     </tr>
                 </table>

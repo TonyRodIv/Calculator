@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --BG:#FDFEF7;
+    --text:#373D34;
+    --displayBG:#E2E8DF;
+    --numBTN:#F3F5ED;
+    --numOPE:#DAE7D1;
+    --numAC:#D7EBEF;
+    --equalBTN:#C7EFBB;
+
+    --numHOV:#e6e9df;
+    --opeHOV:#cedbc4;
+    --acHOV:#c7dce0;
+    --equalHOV:#bae0ae;
+
+}
+
+body{
+    background-color: var(--BG);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.display{
+    width: 19.2rem;
+    height: 8rem;
+    color: var(--text);
+    border: 0.125rem solid var(--text);
+    background-color: var(--displayBG);
+    font-size: 3rem;
+    text-align: end;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+tr{
+    margin: 0.4rem 0rem 0.4rem 0rem;
+    display: flex;
+    gap: 0.4rem;
+}
+tr td button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0.125rem solid var(--text);
+    background-color: var(--numBTN);
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+.btn-operation{
+    background-color: var(--numOPE);
+}
+.btn-AC{
+    background-color: var(--numAC);
+}
+.btn-equality{
+    background-color: var(--equalBTN);
+}
+button:hover{
+    background-color: var(--numHOV);
+}
+.btn-operation:hover{
+    background-color: var(--opeHOV);
+}
+.btn-AC:hover{
+    background-color: var(--acHOV);
+}
+.btn-equality:hover{
+    background-color: var(--equalHOV);
+}
+
+
+/* CHECKBOX PARA MUDAR O TEMA */
+
+.switch {
+    --circle-dim: 1.4em;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    margin-bottom: 1rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #9ed99c;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider-card {
+    position: absolute;
+    content: "";
+    height: var(--circle-dim);
+    width: var(--circle-dim);
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    transition: .4s;
+    pointer-events: none;
+  }
+  
+  .slider-card-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    border-radius: 50%;
+    transition: .4s transform;
+  }
+  
+  .slider-card-front {
+    background-color: #379237;
+  }
+  
+  .slider-card-back {
+    background-color: #DC3535;
+    transform: rotateY(180deg);
+  }
+  
+  input:checked ~ .slider-card .slider-card-back {
+    transform: rotateY(0);
+  }
+  
+  input:checked ~ .slider-card .slider-card-front {
+    transform: rotateY(-180deg);
+  }
+  
+  input:checked ~ .slider-card {
+    transform: translateX(1.5em);
+  }
+  
+  input:checked ~ .slider {
+    background-color: #f5aeae;
+  }
