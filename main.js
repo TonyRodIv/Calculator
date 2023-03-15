@@ -31,9 +31,10 @@ equalsBtn.addEventListener('click', () => {
 });
 function clear() {
     display.value = '';
+    statusPri = true;
 }
 clearBtn.addEventListener('click', () => {
-    display.value = '';
+    console.log(clear())
 })
 
 let statusPri = true;
