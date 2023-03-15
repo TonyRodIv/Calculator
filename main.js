@@ -35,12 +35,12 @@ function mudarTema() {
     document.body.style.setProperty('--numBTN', '#FBF0ED');
     document.body.style.setProperty('--numOPE', '#FFDACF');
     document.body.style.setProperty('--numAC', '#FAE191');
-    document.body.style.setProperty('--equalBTN', '#FFDACF');
+    document.body.style.setProperty('--equalBTN', '#ffc3b1');
 
     document.body.style.setProperty('--numHOV', '#e4d5d1');
     document.body.style.setProperty('--opeHOV', '#ebc7bc');
     document.body.style.setProperty('--acHOV', '#e9d287');
-    document.body.style.setProperty('--equalHOV', '#ebc7bc');
+    document.body.style.setProperty('--equalHOV', '#ecb3a2');
 }
 function mudarTemaGreen() {
     document.body.style.setProperty('--BG', '#FDFEF7');
