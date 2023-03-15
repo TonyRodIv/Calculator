@@ -1,5 +1,6 @@
 const numbersBtn = document.querySelectorAll('[data-number]');
 const operationBtn = document.querySelectorAll('[data-operation]');
+const priorityBtn = document.querySelector('[data-priority]');
 const clearBtn = document.querySelector('[data-clear]');
 const equalsBtn = document.querySelector('[data-equals]');
 const display = document.querySelector('#display');
@@ -35,6 +36,19 @@ clearBtn.addEventListener('click', () => {
     display.value = '';
 })
 
+let statusPri = true;
+
+priorityBtn.addEventListener('click',() =>{ // adiciona um evento de clique ao botão
+    if(statusPri){ 
+        display.value += '('; 
+        console.log(display.value)
+    } else{
+        display.value += ')'; 
+        console.log(display.value) 
+    }
+    statusPri = !statusPri; 
+})
+
 let checkbox = document.getElementById('checkTHEME')
 
 checkbox.addEventListener("change", () => {
@@ -44,10 +58,6 @@ checkbox.addEventListener("change", () => {
         console.log(mudarTemaGreen())
     }
 })
-function emBreve(){
-    console.log('erro')
-    window.alert('ERRO 😢 - Ainda não tenho essa funcionalidade!!!')
-}
 
 function mudarTema() {
     document.body.style.setProperty('--BG', '#FFFBFA');
