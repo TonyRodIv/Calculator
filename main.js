@@ -44,6 +44,10 @@ checkbox.addEventListener("change", () => {
         console.log(mudarTemaGreen())
     }
 })
+function emBreve(){
+    console.log('erro')
+    window.alert('ERRO 😢 - Ainda não tenho essa funcionalidade!!!')
+}
 
 function mudarTema() {
     document.body.style.setProperty('--BG', '#FFFBFA');
