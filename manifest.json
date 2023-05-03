@@ -24,9 +24,9 @@
   ],
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/1580/1580261.png",
+      "src": "./AppImages/calculatorIcon.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "600x600"
     }
   ],
   "shortcuts": [],
