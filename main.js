@@ -90,4 +90,3 @@ function mudarTemaGreen() {
     document.body.style.setProperty('--acHOV', '#c7dce0');
     document.body.style.setProperty('--equalHOV', '#bae0ae');
 }
-console.log(mudarTemaGreen())

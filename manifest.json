@@ -8,6 +8,7 @@
   "scope": "index.html",
   "short_name": "Calculadora",
   "start_url": "/https://tonyrodiv.github.io/Calculator/",
+  "theme_color": "#fdfef7",
   "categories": [],
   "screenshots": [
     {
