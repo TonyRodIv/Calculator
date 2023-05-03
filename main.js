@@ -61,6 +61,7 @@ checkbox.addEventListener("change", () => {
 })
 
 function mudarTema() {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#FFFBFA');
     document.body.style.setProperty('--BG', '#FFFBFA');
     document.body.style.setProperty('--text', '#2e2827');
     document.body.style.setProperty('--displayBG', '#F4DED7');
@@ -75,6 +76,7 @@ function mudarTema() {
     document.body.style.setProperty('--equalHOV', '#ecb3a2');
 }
 function mudarTemaGreen() {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#FDFEF7');
     document.body.style.setProperty('--BG', '#FDFEF7');
     document.body.style.setProperty('--text', '#373D34');
     document.body.style.setProperty('--displayBG', '#E2E8DF');
@@ -88,3 +90,4 @@ function mudarTemaGreen() {
     document.body.style.setProperty('--acHOV', '#c7dce0');
     document.body.style.setProperty('--equalHOV', '#bae0ae');
 }
+console.log(mudarTemaGreen())
