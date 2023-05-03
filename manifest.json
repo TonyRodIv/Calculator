@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "index.html",
   "short_name": "Calculadora",
-  "start_url": "Calculator/",
+  "start_url": "",
   "theme_color": "#fdfef7",
   "categories": [],
   "screenshots": [
